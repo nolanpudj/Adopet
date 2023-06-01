@@ -16,10 +16,20 @@
         <div class="navigation-bar" id="navigation-bar">
             <ul class="navigation-list">
                 <li><a href="Home.html" class="navigation-item navigation-item-active">Home</a></li>
-                <li><a href="Motorcycle.html" class="navigation-item">Motorcycles</a></li>
+                <li><a href="Pets.html" class="navigation-item">Adopt a Pet</a></li>
+
+                <li class="navigation-item dropdown">
+                    <a class="navigation-link dropdown-toggle disabled-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Community Hub
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Articles</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                    </div>
+                </li>
                 <li><a href="Events.html" class="navigation-item">Events</a></li>
-                <li><a href="AboutUs.html" class="navigation-item">About Us</a></li>
                 <li><a href="Register.html" class="navigation-item">Register</a></li>
+                <li><a href="Login.html" class="navigation-item">Login</a></li>
             </ul>
         </div>
     </header>
@@ -27,107 +37,66 @@
         <div class="hero-section home-title">
             <img src="Assets/hero-home.png"/>
             <div>
-                <h1>The best rides happen on two wheels</h1>
+                <h1>Adopt a Forever Friend today!</h1>
                 <h3>Four wheels move the body, Two wheels move the soul.</h3>
-                <input onclick="location.href='Motorcycle.html';" type="submit" name="View Collection" value="View Collection" class="view-collection-button">
             </div>
         </div>
-        <div class="favorites-container">
-            <div class="purple-rectangle"></div>
-            <div class="motorcycle-card">
-                <img src="Assets/motor (1).png"/>
-                <div class="motorcycle-desc">
-                    <div class="motorcycle-series-price">
-                        <h2>Honda</h2>
-                        <h5>249.90</h5>
-                    </div>
-                    <h4>PCX125</h4>
-                </div>
-            </div>
-            <div class="motorcycle-card">
-                <img src="Assets/motor (2).png"/>
-                <div class="motorcycle-desc">
-                    <div class="motorcycle-series-price">
-                        <h2>Yamaha</h2>
-                        <h5>299.90</h5>
-                    </div>
-                    <h4>XT23</h4>
-                </div>
-            </div>
-            <div class="motorcycle-card">
-                <img src="Assets/motor (3).png"/>
-                <div class="motorcycle-desc">
-                    <div class="motorcycle-series-price">
-                        <h2>Harley-D</h2>
-                        <h5>229.90</h5>
-                    </div>
-                    <h4>MTR22</h4>
-                </div>
-            </div>
-            <div class="motorcycle-card-mobile">
-                <img src="Assets/motor (10).png"/>
-                <div class="motorcycle-desc">
-                    <div class="motorcycle-series-price">
-                        <h2>Harley-D</h2>
-                        <h5>249.90</h5>
-                    </div>
-                    <h4>SDT33</h4>
-                </div>
-            </div>
-        </div>
-        <section class="whoweare">
-                <div class="whoweare-head">
-                    <h4 class="purple-highlight">Who we are</h4>
-                    <h1 class="subtitle">Keeping things on track, especially our sweet rides</h1>
-                    <p>
-                        Yamada’s goal is bringing the best possible experience to any enthusiast looking for what goes on your person or your motorcycle. We also attempt to specialize where it makes sense for certain specific riding styles.
-                    </p>
-                    <input onclick="location.href='AboutUs.html';" type="submit" name="About Us" value="About Us" class="view-collection-button">
-                </div>
-                <div>
-                    <img class="whoweare-image" src="Assets/madewithlove.png" alt="Barista brewing coffee."/>
-                </div>
-        </section>
-        <div class="our-mission">
-            <div>
-                <img class="our-mission-motorcycle" src="Assets/motorcyclefloat.png">
-            </div>
-            <div class="our-mission-head">
-                <h4 class="purple-highlight">Our mission</h4>
-                <h1 class="subtitle">Giving you company on the road</h1>
-            </div>
 
+        <div class="overlay">
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Dog Categories" value="Dog Categories">
+              <img src="Assets/ph_dog.svg"></img>
+              <span>Dogs</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Cat Categories" value="Cat Categories">
+              <img src="Assets/ph_cat.svg"></img>
+              <span>Cats</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Other Categories" value="Other Categories">
+              <img src="Assets/fluent_animal-turtle-20-regular.svg"></img>
+              <span>Other Animals</span>
+            </div>
         </div>
-        <div class="favorites-container">
+          
+        <div class="article" id="reccomendation">
+            <div class="reccomendation-container">
+                <h1 class="subtitle">Pets available for adoption nearby</h1>
+            </div>
+            <div class="favorites-container">
                 <div class="purple-rectangle"></div>
                 <div class="motorcycle-card">
                     <img src="Assets/motor (1).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Honda</h2>
-                            <h5>249.90</h5>
+                            <h2>Golden Retriever</h2>
                         </div>
-                        <h4>PCX125</h4>
+                        <div class="motorcycle-series-price">
+                            <h4>Helly</h4>
+                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                        </div>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (2).png"/>
+                    <img src="Assets/motor (1).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Yamaha</h2>
-                            <h5>299.90</h5>
+                            <h2>Golden Retriever</h2>
                         </div>
-                        <h4>XT23</h4>
+                        <div class="motorcycle-series-price">
+                            <h4>Helly</h4>
+                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                        </div>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (3).png"/>
+                    <img src="Assets/motor (1).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Harley-D</h2>
-                            <h5>229.90</h5>
+                            <h2>Golden Retriever</h2>
                         </div>
-                        <h4>MTR22</h4>
+                        <div class="motorcycle-series-price">
+                            <h4>Helly</h4>
+                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                        </div>
                     </div>
                 </div>
                 <div class="motorcycle-card-mobile">
@@ -141,15 +110,92 @@
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <section class="whoweare">
+            <div class="whoweare-head">
+                <h4 class="purple-highlight">Events</h4>
+                <h1 class="subtitle">Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Aliquet pretium mi urna convallis lacus mus morbi. Sit mauris turpis diam leo nibh. Ac elementum tempor tempor egestas. Duis praesent at maecenas laoreet dolor consectetur eget.
+                </p>
+                <input onclick="location.href='AboutUs.html';" type="submit" name="About Us" value="About Us" class="view-collection-button">
+            </div>
+            <div>
+                <img class="whoweare-image" src="Assets/madewithlove.svg" alt="Barista brewing coffee."/>
+            </div>
+        </section>
+        
+        <div class="article">
+            <div class="articles-container">
+                <div class="our-mission-head">
+                    <h4 class="purple-highlight">Guide</h4>
+                    <h1 class="subtitle">Pet Parenting 101</h1>
+                </div>
+                <div class="articles-button">
+                    <input onclick="location.href='Articles.html';" type="submit" name="Articles" value="Articles" class="view-collection-button">
+                </div>
+            </div>
+            <div class="favorites-container">
+                <div class="purple-rectangle"></div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Golden Retriever</h2>
+                        </div>
+                        <div class="motorcycle-series-price">
+                            <h4>Helly</h4>
+                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Golden Retriever</h2>
+                        </div>
+                        <div class="motorcycle-series-price">
+                            <h4>Helly</h4>
+                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Golden Retriever</h2>
+                        </div>
+                        <div class="motorcycle-series-price">
+                            <h4>Helly</h4>
+                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="motorcycle-card-mobile">
+                    <img src="Assets/motor (10).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>SDT33</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <section class="whoweare">
             <div>
                 <img class="whoweare-image" src="Assets/community.png" alt="Barista brewing coffee."/>
             </div>
             <div class="whoweare-head">
-                <h4 class="purple-highlight">Join our community</h4>
-                <h1 class="subtitle">Ride with pride, joy, and people from all over the world</h1>
+                <h4 class="purple-highlight">Forum</h4>
+                <h1 class="subtitle">Pet Parenting 101</h1>
                 <p>
-                    Yamada is first and foremost, a club of motorcycle enthusiasts.  The continuing mission of Yamada is to foster passion for motorcycling, in all forms, now and in the future.  The club is incorporated as a non-profit corporation and is a family club, not an outlaw motorcycle club. 
+                    Lorem ipsum dolor sit amet consectetur. Aliquet pretium mi urna convallis lacus mus morbi. Sit mauris turpis diam leo nibh. Ac elementum tempor tempor egestas. Duis praesent at maecenas laoreet dolor consectetur eget. 
                 </p>
                 <input onclick="location.href='Register.html';" type="submit" name="Register" value="Register" class="view-collection-button">
             </div>

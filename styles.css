@@ -64,6 +64,59 @@ header img{
     text-align: right;
 }
 
+/* Styling for the dropdown menu */
+
+.dropdown {
+    text-decoration: none;
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.disabled-link{
+    cursor: default;
+    pointer-events: none;        
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #727AE7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 16px 48px 16px 16px;
+    border-radius: 32px;
+  }
+  
+  .dropdown-menu a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    color:rgba(29, 18, 56, 1);
+    border-radius: 32px;
+  }
+  
+  .navigation-item.dropdown {
+    position: relative;
+  }
+  
+  .navigation-item.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navigation-item.dropdown:hover .dropdown-item {
+    text-align: left;
+  }
+  
+
 .navigation-list-footer{
     padding: 0;
     list-style-type: none;
@@ -139,7 +192,7 @@ main{
 
 .home-title div{
     width: auto;
-    left: 45%;
+    right: 45%;
 }
 
 .hero-section div h1{
@@ -152,6 +205,7 @@ main{
     color: #DFD6FF;
     font-size: x-large;
     font-weight: 600;
+    margin-bottom: 0%;
 }
 
 .hero-section div h3{
@@ -186,6 +240,74 @@ main{
     filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.64));
 }
 
+.overlay {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    align-items: center;
+    justify-items: center;
+
+    padding-left: 8%;
+    padding-right: 8%;
+
+    margin-top: -8%;
+}
+  
+  .square {
+    height: 280px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #727AE7;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    transition: ease-in-out 0.2s;
+    transform: scale(100%);
+  }
+
+  .square:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 8px 8px 16px;
+    transform: scale(110%);
+  }
+  
+  @media (max-width: 768px) {
+    .square {
+      width: 50%;
+      height: 33.33%;
+    }
+  }
+  
+
+.categories {    
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    align-items: center;
+    justify-items: center;
+
+    padding: 8%;
+    row-gap: 16%;
+}
+
+.wishlist {
+    max-width: 16%;
+    margin-bottom: 8%;
+    width: 32px; /* Set the desired width */
+    height: 32px; /* Set the desired height */
+}
+
+
 .motorcycle div h3, .motorcycle div h2{
     font-size: 24px;
     margin-top: 2%;
@@ -197,7 +319,7 @@ main{
     font-weight: 600;
     margin-bottom: 10px;
     font-size: large;
-    width: 175px;
+    width: auto;
     padding-bottom: 10px;
     transition: width 0.7s;
 }
@@ -211,13 +333,32 @@ main{
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
     row-gap: 40px;
 }
 
 .favorites-container{
     position: relative;
+}
+
+.reccomendation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article {
+    margin-top: 0px;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.articles-button {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 32px;
 }
 
 .purple-rectangle{
@@ -226,7 +367,7 @@ main{
     z-index: -1;
     height: 270px;
     width: 99.3vw;
-    background-color: #DFD6FF;
+    background-color: #EBEBEB;
 }
 
 .motorcycle-desc{
@@ -251,19 +392,18 @@ main{
 
 .motorcycle-desc div h2{
     font-weight: 600;
-    max-width: 160px;
     color: #9173F3;
     font-size: 24px;
 }
 
 .motorcycle-card{
     text-align: left;
-    max-width: 320px;
+    width: 280px;
     height: auto;
     border-radius: 20px;
     box-shadow: #1d12382c 8px 8px 16px;
     padding: 0;
-    margin: 0;
+    margin: 20px;
     transform: scale(100%);
     transition: box-shadow 0.3s, transform 0.3s;
     background-color: white;
@@ -272,7 +412,7 @@ main{
 .motorcycle-card-mobile{
     display: none;
     text-align: left;
-    max-width: 320px;
+    max-width: 280px;
     height: auto;
     border-radius: 20px;
     box-shadow: #1d12382c 8px 8px 16px;
@@ -299,6 +439,7 @@ main{
 }
 
 .motorcycle-series-price{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -328,13 +469,13 @@ main{
     border: solid #DFD6FF 3px;
 }
 
-.history, .innovation, .the-team, .favorites, .events, .our-mission{
+.history, .innovation, .the-team, .favorites, .events, .article{
     padding: 160px;
     display: flex;
     flex-direction: column;
 }
 
-.our-mission-head h1{
+.article-head h1{
     color: white;
 }
 
@@ -402,8 +543,8 @@ main{
     background-size: cover;
 }
 
-.our-mission{
-    background-image: linear-gradient(to left, rgba(29, 18, 56, 0), rgba(29, 18, 56, 1))
+.article {
+
 }
 
 .innovation-home{
@@ -438,13 +579,13 @@ main{
 
 .purple-highlight{
     display: inline;
-    background-color: #9173F3;
+    align-self: flex-start;
+    background-color: #5258B5;
     color: white;
     padding-left: 24px;
     padding-right: 24px;
     font-weight: 600;
     font-size: x-large;
-    width: auto;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -456,7 +597,7 @@ main{
 .subtitle{
     color: #1D1238;
     font-weight: 800;
-    font-style: italic;
+    font-style: bold;
     font-size: xx-large;
 }
 
@@ -606,17 +747,17 @@ main{
     width: 180px;
     height: 48px;
     
-    border: solid #9173F3 1px;
+    border: solid #D95796 1px;
     color: white;
-    background: #9173F3;
+    background: #D95796;
     border-radius: 16px;
     transition: ease-in-out 0.3s;
 }
 
 .view-collection-button:hover{
-    width: 192px;
-    color: #9173F3;
-    border: solid #9173F3 1px;
+    width: 188px;
+    color: #D95796;
+    border: solid #D95796 1px;
     background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -725,9 +866,8 @@ main{
     margin-bottom: 7.5rem;
     column-gap: 6rem;
     padding: 60px;
+    padding-left: 160px;
 }
-
-
 
 .whoweare-head{
     display:flex;
@@ -739,10 +879,18 @@ main{
 
 .whoweare-image{
     display: flex;
-    width: 100%;
+    align-items: center;
+    column-gap: 24px;
+    width: auto;
     border-radius: 16px;
 }
 
+.categories-image {
+    display: flex;
+    height: auto;
+    align-items: center;
+    column-gap: 24px;
+}
 
 
 /*Footer*/
@@ -870,16 +1018,16 @@ footer div div div{
         display: block;
     }
 
-    .history, .innovation, .our-mission{
+    .history, .innovation, .article{
         align-items: center;
         justify-content: center;
     }
 
-    .history div h4, .history div h1, .innovation div h4, .innovation div h1, .events div h4, .events div h1, .our-mission div h4, .our-mission div h1, .whoweare div h4, .whoweare div h1{
+    .history div h4, .history div h1, .innovation div h4, .innovation div h1, .events div h4, .events div h1, .article div h4, .article div h1, .whoweare div h4, .whoweare div h1{
         text-align: center;
     }
 
-    .history-head, .events-head, .our-mission-head{
+    .history-head, .events-head, .article-head{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -894,11 +1042,11 @@ footer div div div{
         font-size: small;
     }
 
-    .innovation-container, .our-mission-cont{
+    .innovation-container, .article-cont{
         flex-direction: column;
     }
 
-    .innovation-container div, .our-mission-cont div{
+    .innovation-container div, .article-cont div{
         width: 80vw;
         text-align: center;
         margin-bottom: 35px;
@@ -952,7 +1100,7 @@ footer div div div{
         display: flex;
     }
 
-    .our-mission-motorcycle{
+    .article-motorcycle{
         z-index: -1;
         opacity: 0.2;
     }
@@ -1183,14 +1331,14 @@ footer div div div{
         filter: brightness(0.5);
     }
 
-    .our-mission{
+    .article{
         width: 100vw;
         padding: 0px;
         padding-top: 80px;
         padding-bottom: 80px;
     }
 
-    .our-mission-head{
+    .article-head{
         width: 80vw;
     }
 
@@ -1250,7 +1398,7 @@ footer div div div{
     width: 920px;
 }
 
-.our-mission-motorcycle{
+.article-motorcycle{
     position: absolute;
     float: right;
     right: 0;
@@ -1258,7 +1406,7 @@ footer div div div{
     transform: translateY(-36%);
 }
 
-.our-mission-cont{
+.article-cont{
     margin-top: 192px;
     margin-bottom: 192px;
 }
