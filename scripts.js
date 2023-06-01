@@ -9,6 +9,18 @@ window.addEventListener("scroll", () => {
     }
 }, false)
 
+// Adding functionality to close the dropdown menu when clicking outside
+document.addEventListener('click', function(event) {
+    var isClickInside = document.querySelector('.navbar').contains(event.target);
+    if (!isClickInside) {
+      var dropdownMenus = document.getElementsByClassName('dropdown-menu');
+      for (var i = 0; i < dropdownMenus.length; i++) {
+        dropdownMenus[i].style.display = 'none';
+      }
+    }
+  });
+  
+
 //Burger Navbar
 let burger = document.getElementById("burger")
 let navbar = document.getElementById("navigation-bar")

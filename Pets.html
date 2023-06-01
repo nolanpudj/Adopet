@@ -16,31 +16,66 @@
         <div class="navigation-bar" id="navigation-bar">
             <ul class="navigation-list">
                 <li><a href="Home.html" class="navigation-item">Home</a></li>
-                <li><a class="navigation-item navigation-item-active">Motorcycles</a></li>
+                <li><a href="Pets.html" class="navigation-item navigation-item-active">Adopt a Pet</a></li>
+
+                <li class="navigation-item dropdown">
+                    <a class="navigation-link dropdown-toggle disabled-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Community Hub
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Articles</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                    </div>
+                </li>
                 <li><a href="Events.html" class="navigation-item">Events</a></li>
-                <li><a href="AboutUs.html" class="navigation-item">About Us</a></li>
                 <li><a href="Register.html" class="navigation-item">Register</a></li>
+                <li><a href="Login.html" class="navigation-item">Login</a></li>
             </ul>
         </div>
     </header>
     <main>
         <div class="hero-section motorcycle">
             <div>
-                <h4 class="purple-highlight">Featured Ride</h4>
-                <h1>Harley Davidson</h1>
-                <h3>ELECTRIC MOTOR</h3>
-                <h2>Revelation</h2>
-                <h3>TORQUE</h3>
-                <h2>86 ft-lb</h2>
-                <h3>HORSEPOWER</h3>
-                <h2>105 HP/x78 kW</h2>
+                <h4 class="purple-highlight">Featured Pet</h4>
+                <h1>Helly</h1>
+                <h3>Male Golden Retriever</h3>
+                <h2>SHELTER</h2>
+                <h3>House of Dogs</h3>
+                <h3>Helly is very gentle and kind. He’s great with kids and older people. His parents passed from cancer </h3>
             </div>
             <img class="hero-motorcycle"src="Assets/hero-motorcycle.png"/>
         </div>
-        <div class="favorites">
-            <div class="mobile-head">
-                <h4 class="purple-highlight">Our Collection</h4>
-                <h1 class="subtitle">Favorites</h1>
+
+        <div class="categories">
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Dog Categories" value="Dog Categories">
+              <img src="Assets/ph_dog.svg"></img>
+              <span>Dogs</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Cat Categories" value="Cat Categories">
+              <img src="Assets/ph_cat.svg"></img>
+              <span>Cats</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Other Categories" value="Other Categories">
+              <img src="Assets/fluent_animal-turtle-20-regular.svg"></img>
+              <span>Other Animals</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Dog Categories" value="Dog Categories">
+              <img src="Assets/ph_dog.svg"></img>
+              <span>Dogs</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Cat Categories" value="Cat Categories">
+              <img src="Assets/ph_cat.svg"></img>
+              <span>Cats</span>
+            </div>
+            <div class="square" onclick="location.href='Pets.html';" type="submit" name="Other Categories" value="Other Categories">
+              <img src="Assets/fluent_animal-turtle-20-regular.svg"></img>
+              <span>Other Animals</span>
+            </div>
+        </div>
+          
+        <div class="article" id="nearby">
+            <div class="reccomendation-container">
+                <h1 class="subtitle">Pets available for adoption nearby</h1>
             </div>
             <div class="favorites-container">
                 <div class="purple-rectangle"></div>
@@ -85,75 +120,224 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile-head">
-                <h1 class="subtitle">Motorcycles</h1>
-            </div>
-            <div class="motorcycles-cont" id="bikes">
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (4).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>KTM</h2>
-                            <h5>129.90</h5>
-                        </div>
-                        <h4>BONS</h4>
-                    </div>
+        </div>
+
+        <div class="article" id="category-1">
+            <div class="articles-container">
+                <div class="categories-image">
+                    <img src="Assets/Black Icon/ph_dog.svg"></img>
+                    <h1 class="subtitle">Dogs</h1>
                 </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (5).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Suzuki</h2>
-                            <h5>349.90</h5>
-                        </div>
-                        <h4>67TRS</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (6).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Kawasaki</h2>
-                            <h5>239.90</h5>
-                        </div>
-                        <h4>NT29</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (7).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>BMW</h2>
-                            <h5>329.90</h5>
-                        </div>
-                        <h4>FXSOD</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (8).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Ducati</h2>
-                            <h5>259.90</h5>
-                        </div>
-                        <h4>JDPOS</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (9).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Triumph</h2>
-                            <h5>239.90</h5>
-                        </div>
-                        <h4>RDRNR</h4>
-                    </div>
+                <div class="articles-button">
+                    <input onclick="location.href='Articles.html';" type="submit" name="View All" value="View All" class="view-collection-button">
                 </div>
             </div>
-            <div class="view-more-div">
-                <button id="view-more">View More</button>
+            <div class="favorites-container">
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Honda</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>PCX125</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (2).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Yamaha</h2>
+                            <h5>299.90</h5>
+                        </div>
+                        <h4>XT23</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (3).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>229.90</h5>
+                        </div>
+                        <h4>MTR22</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card-mobile">
+                    <img src="Assets/motor (10).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>SDT33</h4>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="article" id="category-2">
+            <div class="articles-container">
+                <div class="categories-image">
+                    <img src="Assets/Black Icon/ph_cat.svg"></img>
+                    <h1 class="subtitle">Cats</h1>
+                </div>
+                <div class="articles-button">
+                    <input onclick="location.href='Articles.html';" type="submit" name="View All" value="View All" class="view-collection-button">
+                </div>
+            </div>
+            <div class="favorites-container">
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Honda</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>PCX125</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (2).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Yamaha</h2>
+                            <h5>299.90</h5>
+                        </div>
+                        <h4>XT23</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (3).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>229.90</h5>
+                        </div>
+                        <h4>MTR22</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card-mobile">
+                    <img src="Assets/motor (10).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>SDT33</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article" id="category-3">
+            <div class="articles-container">
+                <div class="categories-image">
+                    <img src="Assets/Black Icon/fluent_animal-turtle-20-regular.svg"></img>
+                    <h1 class="subtitle">Reptiles</h1>
+                </div>
+                <div class="articles-button">
+                    <input onclick="location.href='Articles.html';" type="submit" name="View All" value="View All" class="view-collection-button">
+                </div>
+            </div>
+            <div class="favorites-container">
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Honda</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>PCX125</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (2).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Yamaha</h2>
+                            <h5>299.90</h5>
+                        </div>
+                        <h4>XT23</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (3).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>229.90</h5>
+                        </div>
+                        <h4>MTR22</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card-mobile">
+                    <img src="Assets/motor (10).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>SDT33</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article" id="category-4">
+            <div class="articles-container">
+                <div class="categories-image">
+                    <img src="Assets/Black Icon/ph_bird.svg"></img>
+                    <h1 class="subtitle">Birds</h1>
+                </div>
+                <div class="articles-button">
+                    <input onclick="location.href='Articles.html';" type="submit" name="View All" value="View All" class="view-collection-button">
+                </div>
+            </div>
+            <div class="favorites-container">
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Honda</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>PCX125</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (2).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Yamaha</h2>
+                            <h5>299.90</h5>
+                        </div>
+                        <h4>XT23</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/motor (3).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>229.90</h5>
+                        </div>
+                        <h4>MTR22</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card-mobile">
+                    <img src="Assets/motor (10).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Harley-D</h2>
+                            <h5>249.90</h5>
+                        </div>
+                        <h4>SDT33</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <div class="headfoot-clear">
