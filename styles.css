@@ -832,28 +832,28 @@ main{
 #event-banner-1{
     background-image:
     linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
-    url('Assets/event-banner\ \(2\).png');
+    url('Assets/event-banner\ \(1\).png');
     background-size: cover;
 }
 
 #event-banner-2{
     background-image:
     linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
-    url('Assets/event-banner\ \(3\).png');
+    url('Assets/event-banner\ \(2\).png');
     background-size: cover;
 }
 
 #event-banner-3{
     background-image:
     linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
-    url('Assets/event-banner\ \(4\).png');
+    url('Assets/event-banner\ \(3\).png');
     background-size: cover;
 }
 
 #event-banner-4{
     background-image:
     linear-gradient(to right, #1D1238 30%, rgba(80, 68, 65, 0)),
-    url('Assets/event-banner\ \(1\).png');
+    url('Assets/event-banner\ \(4\).png');
     background-size: cover;
 }
 
