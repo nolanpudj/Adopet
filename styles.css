@@ -1418,3 +1418,42 @@ footer div div div {
   width: 100%;
   margin-bottom: 11.25rem;
 }
+
+/* tambahan gres */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #1d1238;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  color: white;
+  background-color: #1d1238;
+  /* background-color: #ddd; */
+}
+
+.pagination .active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.forum-contents {
+  display: inline-flex;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.event-banner-column-padding {
+  flex: 25%;
+  margin: 8px;
+  display: inline-flex;
+  padding-bottom: 5px;
+}
