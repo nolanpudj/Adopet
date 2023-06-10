@@ -48,15 +48,16 @@ if(regForm != null) regForm.onsubmit = () => {return validate()}
 logForm = document.getElementById("logForm")
 if(logForm != null) logForm.onsubmit = () => {return validate_login()}
 
+//Login
 function validate_login()
 {
    if(!validate_login_email()) return false;
    if(!validate_login_password()) return false;
-   alert("Testing");
+   alert("Log-in Successfull");
    return true;
 }
 
-
+//Register
 function validate(){
     if(!validate_name()) return false;
     if(!validate_email()) return false;
@@ -64,7 +65,7 @@ function validate(){
     if(!validate_address()) return false;
     if(!validate_gender()) return false;
     if(!validate_terms()) return false;
-    alert("We welcome you as a proud member to Yamada!");
+    alert("Account has been registered, Welcome to our community!!");
     return true;
 }
 
