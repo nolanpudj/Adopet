@@ -19,12 +19,12 @@
                 <li><a href="Pets.html" class="navigation-item">Adopt a Pet</a></li>
 
                 <li class="navigation-item dropdown">
-                    <a class="navigation-link dropdown-toggle disabled-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="navigation-link dropdown-toggle disabled-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Community Hub
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Articles</a>
-                        <a class="dropdown-item" href="#">Forum</a>
+                        <a class="dropdown-item" href="Articles.html">Articles</a>
+                        <a class="dropdown-item" href="Forum.html">Forum</a>
                     </div>
                 </li>
                 <li><a href="Events.html" class="navigation-item">Events</a></li>
@@ -35,7 +35,11 @@
     </header>
     <main>
         <div class="hero-section home-title">
-            <img src="Assets/hero-home.png"/>
+            <video loop autoplay muted>
+                <source src="Assets/HeroVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- <img src="Assets/hero-home.png"/> -->
             <div>
                 <h1>Adopt a Forever Friend today!</h1>
                 <h3>Four wheels move the body, Two wheels move the soul.</h3>
@@ -132,13 +136,13 @@
                     <h1 class="subtitle">Pet Parenting 101</h1>
                 </div>
                 <div class="articles-button">
-                    <input onclick="location.href='Articles.html';" type="submit" name="Articles" value="Articles" class="view-collection-button">
+                    <input onclick="location.href='Articles.html';" type="submit" name="Learn More" value="Learn More" class="view-collection-button">
                 </div>
             </div>
             <div class="favorites-container">
                 <div class="purple-rectangle"></div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (1).png"/>
+                    <img src="Assets/Article1.png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
                             <h2>Dogs</h2>
@@ -146,12 +150,11 @@
                         </div>
                         <div class="motorcycle-series-name">
                             <h4>Cleaning and Grooming</h4>
-                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
                         </div>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (1).png"/>
+                    <img src="Assets/Article2.png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
                             <h2>Dogs</h2>
@@ -159,31 +162,30 @@
                         </div>
                         <div class="motorcycle-series-name">
                             <h4>Walking in the Neighbourhood</h4>
-                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
                         </div>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (1).png"/>
+                    <img src="Assets/Article3.png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Dogs</h2>
-                            <h5>Tips</h5>
+                            <h2>Reptiles</h2>
+                            <h5>Tutorial</h5>
                         </div>
                         <div class="motorcycle-series-name">
-                            <h4>Helly</h4>
-                            <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+                            <h4>Basking 101</h4>
                         </div>
                     </div>
                 </div>
                 <div class="motorcycle-card-mobile">
-                    <img src="Assets/motor (1).png"/>
+                    <img src="Assets/Article4.png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Golden Retriever</h2>
+                            <h2>Cats</h2>
+                            <h5>Tips</h5>
                         </div>
                         <div class="motorcycle-series-name">
-                            <h4>Helly</h4>
+                            <h4>Choosing your Toys</h4>
                             <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
                         </div>
                     </div>
@@ -197,24 +199,24 @@
             </div>
             <div class="whoweare-head">
                 <h4 class="purple-highlight">Forum</h4>
-                <h1 class="subtitle">Pet Parenting 101</h1>
+                <h1 class="subtitle">Join the Discussion on Our Forum!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Aliquet pretium mi urna convallis lacus mus morbi. Sit mauris turpis diam leo nibh. Ac elementum tempor tempor egestas. Duis praesent at maecenas laoreet dolor consectetur eget. 
+                    Get involved in our vibrant community of pet lovers and professionals by joining our Forum. Share your experiences, seek advice, and connect with like-minded individuals who are passionate about animals. Have questions? or simply want to share stories? Come and join us!
                 </p>
-                <input onclick="location.href='Register.html';" type="submit" name="Register" value="Register" class="view-collection-button">
+                <input onclick="location.href='Forum.html';" type="submit" name="Join Us" value="Join Us" class="view-collection-button">
             </div>
         </section>
     </main>
     <footer>
         <div class="headfoot-clear">
             <div>
-                <div class="logo"><a href="Home.html"><img src="Assets/yamada.svg" alt="logo"/></a></div>
+                <div><h2><a href="Home.html"><img src="Assets/yamada.svg" alt="logo"/></a></h2></div>
                 <div>
                     <ul class="navigation-list-footer">
                         <li><a href="Pets.html" class="navigation-item">Pets</a></li>
                         <li><a href="Events.html" class="navigation-item">Events</a></li>
-                        <li><a href="AboutUs.html" class="navigation-item">About Us</a></li>
-                        <li><a href="Register.html" class="navigation-item">Register</a></li>
+                        <li><a href="Articles.html" class="navigation-item">Articles</a></li>
+                        <li><a href="Forum.html" class="navigation-item">Forum</a></li>
                     </ul>
                 </div>
             </div>
@@ -223,20 +225,9 @@
                 <div>
                     <ul class="navigation-list-footer">
                         <li><a>Partners</a></li>
-                        <li><a>Dealers</a></li>
+                        <li><a>Shelters</a></li>
                         <li><a>Reviews</a></li>
                         <li><a>Ambassadors</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div><h2>Orders</h2></div>
-                <div>
-                    <ul class="navigation-list-footer">
-                        <li><a>Order Status</a></li>
-                        <li><a>Shipping</a></li>
-                        <li><a>Returns</a></li>
-                        <li><a>Financing</a></li>
                     </ul>
                 </div>
             </div>

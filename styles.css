@@ -179,6 +179,10 @@ main{
     width: 99.3vw;
 }
 
+.hero-section video{
+    width: 99.3vw;
+}
+
 .hero-section div{
     position: absolute;
     width: 700px;
@@ -300,6 +304,59 @@ main{
     row-gap: 16%;
 }
 
+.categories div span {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.categories div:hover span {
+    opacity: 1;
+}
+
+
+#categories1 {
+    background-image: url('Assets/categories\ \(1\).png');
+    background-size: cover;
+    justify-content: end;
+    padding: 32px;
+}
+
+#categories2 {
+    background-image: url('Assets/categories\ \(2\).png');
+    background-size: cover;
+    justify-content: end;
+    padding: 32px;
+}
+
+#categories3 {
+    background-image: url('Assets/categories\ \(3\).png');
+    background-size: cover;
+    justify-content: end;
+    padding: 32px;
+}
+
+#categories4 {
+    background-image: url('Assets/categories\ \(4\).png');
+    background-size: cover;
+    justify-content: end;
+    padding: 32px;
+}
+
+#categories5 {
+    background-image: url('Assets/categories\ \(5\).png');
+    background-size: cover;
+    justify-content: end;
+    padding: 32px;
+}
+
+#categories6 {
+    background-image: url('Assets/categories\ \(6\).png');
+    background-size: cover;
+    justify-content: end;
+    padding: 32px;
+}
+
+
 .wishlist {
     max-width: 16%;
     margin-bottom: 8%;
@@ -355,6 +412,7 @@ main{
     grid-template-columns: auto auto;
 }
 
+
 .articles-button {
     margin-left: auto;
     margin-top: auto;
@@ -385,7 +443,7 @@ main{
 }
 
 .motorcycle-series-name h4{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .motorcycle-desc div h5{
@@ -564,7 +622,7 @@ main{
 }
 
 .article {
-
+    padding-bottom: 80px;
 }
 
 .innovation-home{
@@ -909,20 +967,26 @@ main{
     display: flex;
     height: auto;
     align-items: center;
-    column-gap: 24px;
+    column-gap: 32px;
 }
 
+.categories-image img{
+    width: 80px;
+}
 
 /*Footer*/
 footer{
     padding-top: 100px;
     display: flex;
     color: #5e5e5e;
+    justify-content: center;
+    align-content: center;
 }
 footer div{
     position: relative;
     display: flex;
-    width: calc(100% - 22px);
+    flex-direction: row;
+    width: 80%;
     justify-content: space-between;
     align-content: center;
     align-items: flex-start;
@@ -937,11 +1001,10 @@ footer div div{
     display: flex;
     width: 80%;
     flex-direction: column;
-    align-items: flex-start;
     border-top: none;
     padding: 0;
     right: 0;
-    left: 30px;
+    left: 24px;
 }
 
 footer div div div{
@@ -952,7 +1015,7 @@ footer div div div{
 .social-media{
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 0px;
 }
 
 .social-media-link {
