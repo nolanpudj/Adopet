@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <button id="burger">☰</button>
+            <a href="Home.html"><img src="Assets/yamada.svg" alt="logo"/></a>
+        </div>
+        <div class="navigation-bar" id="navigation-bar">
+            <ul class="navigation-list">
+                <li><a href="Home.html" class="navigation-item">Home</a></li>
+                <li><a href="Motorcycle.html" class="navigation-item">Motorcycles</a></li>
+                <li><a href="Events.html" class="navigation-item">Events</a></li>
+                <li><a href="AboutUs.html" class="navigation-item">About Us</a></li>
+                <li><a class="navigation-item navigation-item-active">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="form-adopet">
+        <img src = "Assets/personal-data-form.png" alt = "Logo">
+            <div class="form-inputs">
+                <form name="FormAdopet" class="form-data" id="FormAdopet" action="./form2.html">
+                    <h1>Personal Data</h1>
+                    <p>Please input the correct data/information within this form</p><br>
+                    <!-- First Name -->
+                    <label for = "first-name"> First-Name*</label>
+                    <input type="text" class="input-field" id="first-name" name="first-name"><br>
+                    
+                    <!-- Last Name -->
+                    <label for = "last-name"> Last-Name*</label><br>
+                    <input type="text" class="input-field" id="last-name" name="last-name"><br>
+                    
+                    <!-- Gender Radio Button -->
+                    <label for="gender">Gender:&nbsp</label><br>
+                    <input type="radio" id="male" name="gender" value="male" class="gender-male">
+                    <label for="male" class="gender-label-male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"class="gender-female">
+                    <label for="female">Female</label><br>
+                    
+                    <!-- Place of Birth -->
+                    <label for = "place-of-birth"> Place Of Birth*</label>
+                    <input type = "text" class="input-field" id="place-of-birth" name="place-of-birth">
+
+                    <!-- Age -->
+                    <label for = "age">Age*</label>
+                    <input type= "text" class="input-field" id="age" name="age">
+
+                    <!-- No. EKTP -->
+                    <label for = "KTP">No. E-KTP*</label><br>
+                    <input type= "text" class="input-field" id="KTP" name="KTP"><br>
+                    
+                    <!-- Occupation -->
+                    <label for = "Occupation">Occupation*</label><br>
+                    <select id="drop-down-list" name="Occupation" onchange="showModelInput()">
+                        <option value="College Student">College Student</option>
+                        <option value="Worker">Worker</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div id="model-input-container"></div>
+                    <!-- Submit Button -->
+                    <input type="submit" name="next" value="Next" class="next-button">  
+                </form>
+            </div>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>

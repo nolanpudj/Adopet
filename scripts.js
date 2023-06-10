@@ -266,3 +266,26 @@ document.getElementById("view-more").addEventListener("click", () => {
     }
     toggleSeeMore = !toggleSeeMore;
 });
+
+//drop down list for when others is selected
+function showModelInput() 
+{
+    var selected_Ocp = document.getElementById("drop-down-list").value;
+    var modelInputContainer = document.getElementById("model-input-container");
+
+    // Clear any existing model input field
+    modelInputContainer.innerHTML = "";
+    if(selected_Ocp === "Other")
+    {
+        // Create and append the new model input field
+        var modelInputLabel = document.createElement("label");
+        modelInputLabel.textContent = "Specify your occupation:";
+        var modelInput = document.createElement("input");
+        modelInput.type = "text";
+        modelInput.name = "model";
+        modelInput.required = true;
+
+        modelInputContainer.appendChild(modelInputLabel);
+        modelInputContainer.appendChild(modelInput);
+    }
+  }
