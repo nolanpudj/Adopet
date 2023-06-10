@@ -162,36 +162,45 @@ document.getElementById("view-more").addEventListener("click", () => {
     console.log("new")
     if(toggleSeeMore){
         document.getElementById("bikes").innerHTML = motorbike + 
-        `<div class="motorcycle-card">
-            <img src="Assets/motor (11).png"/>
-            <div class="motorcycle-desc">
-                <div class="motorcycle-series-price">
-                    <h2>Ducati</h2>
-                    <h5>429.90</h5>
-                </div>
-                <h4>SDCCS2</h4>
+        ` <div class="motorcycle-card">
+        <img src="Assets/motor (1).png"/>
+        <div class="motorcycle-desc">
+            <div class="motorcycle-series-price">
+                <h2>Dogs</h2>
+                <h5>Tutorial</h5>
+            </div>
+            <div class="motorcycle-series-name">
+                <h4>Cleaning and Grooming</h4>
+                <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
             </div>
         </div>
-        <div class="motorcycle-card">
-            <img src="Assets/motor (12).png"/>
-            <div class="motorcycle-desc">
-                <div class="motorcycle-series-price">
-                    <h2>BMW</h2>
-                    <h5>258.30</h5>
-                </div>
-                <h4>EER523</h4>
+    </div>
+    <div class="motorcycle-card">
+        <img src="Assets/motor (1).png"/>
+        <div class="motorcycle-desc">
+            <div class="motorcycle-series-price">
+                <h2>Dogs</h2>
+                <h5>Tutorial</h5>
+            </div>
+            <div class="motorcycle-series-name">
+                <h4>Cleaning and Grooming</h4>
+                <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
             </div>
         </div>
-        <div class="motorcycle-card">
-            <img src="Assets/motor (13).png"/>
-            <div class="motorcycle-desc">
-                <div class="motorcycle-series-price">
-                    <h2>Yamada</h2>
-                    <h5>539.90</h5>
-                </div>
-                <h4>XXTW65</h4>
+    </div>
+    <div class="motorcycle-card">
+        <img src="Assets/motor (1).png"/>
+        <div class="motorcycle-desc">
+            <div class="motorcycle-series-price">
+                <h2>Dogs</h2>
+                <h5>Tutorial</h5>
             </div>
-        </div>`;
+            <div class="motorcycle-series-name">
+                <h4>Cleaning and Grooming</h4>
+                <img class="wishlist" src="Assets/Black Icon/heart.svg"/>
+            </div>
+        </div>
+    </div>`;
         document.getElementById("view-more").innerHTML = "View Less"
     } else{
         document.getElementById("bikes").innerHTML = motorbike

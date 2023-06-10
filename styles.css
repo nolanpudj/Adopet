@@ -488,7 +488,26 @@ main{
 #view-more:hover{
     border: solid #DFD6FF 3px;
 }
+.view-more1-div{
+    text-align: center;
+}
 
+#view-more1{
+    text-align: center;
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    color: #9173F3;
+    border: solid rgba(0, 0, 0, 0) 3px;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: border 0.3s;
+    padding: 8px 16px 8px 16px;
+}
+
+#view-more1:hover{
+    border: solid #DFD6FF 3px;
+}
 .history, .innovation, .the-team, .favorites, .events, .article{
     padding: 160px;
     display: flex;
