@@ -44,6 +44,19 @@ window.addEventListener("resize", () => {
 regForm = document.getElementById("regForm")
 if(regForm != null) regForm.onsubmit = () => {return validate()}
 
+//Login page validation
+logForm = document.getElementById("logForm")
+if(logForm != null) logForm.onsubmit = () => {return validate_login()}
+
+function validate_login()
+{
+   if(!validate_login_email()) return false;
+   if(!validate_login_password()) return false;
+   alert("Testing");
+   return true;
+}
+
+
 function validate(){
     if(!validate_name()) return false;
     if(!validate_email()) return false;
@@ -91,15 +104,16 @@ function validate_email(){ //x@x.x
 }
 
 function validate_password(){
-    let password = document.forms["regForm"]["password"].value
-    if (passwordlength < 8){
+    let password = document.forms["regForm"]["password"].value;
+
+    if (password.length < 8){
         document.getElementById("password").style.backgroundColor = "#ffe0ee"
         alert("Password should consist of at least 8 characters or numbers")
         return false
     }
     let upper = false
     let number = false
-    for(let i=0; i<passwordlength; i++){
+    for(let i=0; i<password.length; i++){
         let asc = password.charCodeAt(i);
         if (asc >= 48 && asc <= 57){
             number = true
@@ -153,6 +167,59 @@ function validate_terms(){
     return true
 }
 
+//Log-in page validation
+function validate_login_email(){ //x@x.x
+    let email = document.forms["logForm"]["email"].value
+    let adSym = email.indexOf("@");
+    if (email == ""){ //is empty
+        document.getElementById("email").style.backgroundColor = "#ffe0ee"
+        alert("Email should not be empty.");
+        return false
+    }else if ( adSym == -1 || adSym == 0 || email.startsWith(".")){ // Begins with "@" or does not exist, Begins with "."
+        document.getElementById("email").style.backgroundColor = "#ffe0ee"
+        alert("Invalid email.");
+        return false
+    }else if (email.substring(adSym+1) == "" || email.substring(adSym+1).indexOf("@") != -1){ // Ends with "@" or exist multiple
+        document.getElementById("email").style.backgroundColor = "#ffe0ee"
+        alert("Invalid email.");
+        return false
+    }
+    document.getElementById("email").style.backgroundColor = "white"
+    return true
+}
+
+function validate_login_password(){
+    let password = document.forms["logForm"]["password"].value;
+    
+    if (password.length < 8){
+        document.getElementById("password").style.backgroundColor = "#ffe0ee"
+        alert("Password should consist of at least 8 characters or numbers")
+        return false
+    }
+    let upper = false
+    let number = false
+    for(let i=0; i<password.length; i++){
+        let asc = password.charCodeAt(i);
+        if (asc >= 48 && asc <= 57){
+            number = true
+        }
+        else if (asc >= 65 && asc <= 90){
+            upper = true
+        }
+    }
+    if (!upper){
+        document.getElementById("password").style.backgroundColor = "#ffe0ee"
+        alert("Password should have capital letter(s)")
+        return false
+    }
+    if (!number){
+        document.getElementById("password").style.backgroundColor = "#ffe0ee"
+        alert("Password should have number(s)")
+        return false
+    }
+    document.getElementById("password").style.backgroundColor = "white"
+    return true
+}
 
 //Motorcycles page view more button
 let toggleSeeMore = true;
