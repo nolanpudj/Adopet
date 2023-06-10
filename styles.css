@@ -1464,7 +1464,7 @@ footer div div div {
   transition: max-width 0.1s;
 }
 
-.more-button{
+.more-button {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1472,4 +1472,18 @@ footer div div div {
   justify-content: space-between;
   margin: 0%;
   height: 64px;
+}
+
+.load-button {
+  background-color: #d95796;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Poppins, Verdana, Tahoma, sans-serif;
+}
+
+.load-button:hover {
+  background-color: #d95796;
 }
