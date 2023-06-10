@@ -15,145 +15,194 @@
         </div>
         <div class="navigation-bar" id="navigation-bar">
             <ul class="navigation-list">
-                <li><a href="Home.html" class="navigation-item">Home</a></li>
-                <li><a class="navigation-item navigation-item-active">Motorcycles</a></li>
+                <li><a href="Home.html" class="navigation-item navigation-item-active">Home</a></li>
+                <li><a href="Pets.html" class="navigation-item">Adopt a Pet</a></li>
+
+                <li class="navigation-item dropdown">
+                    <a class="navigation-link dropdown-toggle disabled-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Community Hub
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Articles</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                    </div>
+                </li>
                 <li><a href="Events.html" class="navigation-item">Events</a></li>
-                <li><a href="AboutUs.html" class="navigation-item">About Us</a></li>
                 <li><a href="Register.html" class="navigation-item">Register</a></li>
+                <li><a href="Login.html" class="navigation-item">Login</a></li>
             </ul>
         </div>
     </header>
     <main>
         <div class="hero-section motorcycle">
-            <div>
-                <h4 class="purple-highlight">Featured Ride</h4>
-                <h1>Harley Davidson</h1>
-                <h3>ELECTRIC MOTOR</h3>
-                <h2>Revelation</h2>
-                <h3>TORQUE</h3>
-                <h2>86 ft-lb</h2>
-                <h3>HORSEPOWER</h3>
-                <h2>105 HP/x78 kW</h2>
-            </div>
             <img class="hero-motorcycle"src="Assets/hero-motorcycle.png"/>
+            <div class="pet-name">
+                <h1>Helly</h1>
+            </div>
+            <div class="adopt-button">
+                <input onclick="location.href='form.html';" type="submit" name="Adopt" value="Adopt" class="view-collection-button">
+            </div>
+            <div class="call-button">
+                <input onclick="location.href='ShelterDetails.html';" type="submit" name="Call Shelter" value="Call Shelter" class="view-collection-button">
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-description">
+                    <div class="profile-head">
+                    <h1>Breed</h1>
+                    <div class="breed">
+                        <h2>Golden Retriever</h2>
+                    </div>
+                </div>
+                <div class="profile-head">
+                    <h1>Gender</h1>
+                    <div class="breed">
+                        <h2>Male</h2>
+                    </div>
+                </div>
+                <div class="profile-head">
+                    <h1>Shelter</h1>
+                    <div class="breed">
+                        <h2>House of Dogs</h2>
+                    </div>
+                </div>
+                <div class="profile-head">
+                    <div class="breed">
+                        <h2>Helly is very gentle and kind. He’s great with kids and older people. His parents passed from cancer </h2>
+                    </div>
+                </div>
+                <div class="profile-head">
+                    <h1>Health</h1>
+                    <div class="breed">
+                        <h2>Vaccinations up to date</h2>
+                    </div>
+                </div>
+            </div>
+              <div class="shelter-container">
+                <div class="shelter-card">
+                    <img src="Assets/Shelter Detail.png"/>
+                    <div class="shelter-desc">
+                        <h1>Almart</h1>
+                        <img src="Assets/Line 33.png"/>
+                        <div class="shelter-number-row"> 
+                            <div>
+                                <h2 class="shelter-number-coloumn">Location</h2>
+                                <h3 class="shelter-number-coloumn">Cengkareng, Jakarta Barat</h3>
+                            </div>
+                            <div>
+                                <h2 class="shelter-number-coloumn">Contact Shelter</h2>
+                                <h3 class="shelter-number-coloumn">1234567890</h3>
+                            </div>
+                        </div>
+                        <img src="Assets/Line 33.png"/>
+                        <input onclick="location.href='ShelterDetails.html';" type="submit" name="Shelter Details" value="Shelter Details" class="shelter-button">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="favorites">
             <div class="mobile-head">
-                <h4 class="purple-highlight">Our Collection</h4>
-                <h1 class="subtitle">Favorites</h1>
+                <h1 class="subtitle">Tutorials</h1>
             </div>
             <div class="favorites-container">
+                <div class="purple-rectangle"></div>
+                <div class="motorcycle-card">
+                    <img src="Assets/Rectangle 7.png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Dogs</h2>
+                            <h5>Tutorial</h5>
+                        </div>
+                        <h4>Cleaning and Grooming</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/Rectangle 7 (1).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Dogs</h2>
+                            <h5>Tutorial</h5>
+                        </div>
+                        <h4>Cleaning and Grooming</h4>
+                    </div>
+                </div>
+                <div class="motorcycle-card">
+                    <img src="Assets/Rectangle 7 (2).png"/>
+                    <div class="motorcycle-desc">
+                        <div class="motorcycle-series-price">
+                            <h2>Dogs</h2>
+                            <h5>Tutorial</h5>
+                        </div>
+                        <h4>Cleaning and Grooming</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-head">
+                <h1 class="subtitle">More from this shelter</h1>
+            </div>
+            <div class="motorcycles-cont" id="bikes">
                 <div class="purple-rectangle"></div>
                 <div class="motorcycle-card">
                     <img src="Assets/motor (1).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Honda</h2>
-                            <h5>249.90</h5>
+                            <h2>Golden Retriever</h2>
                         </div>
-                        <h4>PCX125</h4>
+                        <h4>Helly</h4>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (2).png"/>
+                    <img src="Assets/Rectangle 7 (9).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Yamaha</h2>
-                            <h5>299.90</h5>
+                            <h2>Border Collie</h2>
                         </div>
-                        <h4>XT23</h4>
+                        <h4>Cindy</h4>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (3).png"/>
+                    <img src="Assets/Rectangle 7 (5).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Harley-D</h2>
-                            <h5>229.90</h5>
+                            <h2>Bulldog</h2>
                         </div>
-                        <h4>MTR22</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card-mobile">
-                    <img src="Assets/motor (10).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Harley-D</h2>
-                            <h5>249.90</h5>
-                        </div>
-                        <h4>SDT33</h4>
+                        <h4>Rambo</h4>
                     </div>
                 </div>
             </div>
             <div class="mobile-head">
-                <h1 class="subtitle">Motorcycles</h1>
+                <h1 class="subtitle">Dogs nearby</h1>
             </div>
             <div class="motorcycles-cont" id="bikes">
+                <div class="purple-rectangle"></div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (4).png"/>
+                    <img src="Assets/Rectangle 7 (6).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>KTM</h2>
-                            <h5>129.90</h5>
+                            <h2>Bulldog</h2>
                         </div>
-                        <h4>BONS</h4>
+                        <h4>Loki</h4>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (5).png"/>
+                    <img src="Assets/Rectangle 7 (7).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Suzuki</h2>
-                            <h5>349.90</h5>
+                            <h2>Toy Puddle</h2>
                         </div>
-                        <h4>67TRS</h4>
+                        <h4>Helly</h4>
                     </div>
                 </div>
                 <div class="motorcycle-card">
-                    <img src="Assets/motor (6).png"/>
+                    <img src="Assets/Rectangle 7 (8).png"/>
                     <div class="motorcycle-desc">
                         <div class="motorcycle-series-price">
-                            <h2>Kawasaki</h2>
-                            <h5>239.90</h5>
+                            <h2>Golden Retriever</h2>
                         </div>
-                        <h4>NT29</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (7).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>BMW</h2>
-                            <h5>329.90</h5>
-                        </div>
-                        <h4>FXSOD</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (8).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Ducati</h2>
-                            <h5>259.90</h5>
-                        </div>
-                        <h4>JDPOS</h4>
-                    </div>
-                </div>
-                <div class="motorcycle-card">
-                    <img src="Assets/motor (9).png"/>
-                    <div class="motorcycle-desc">
-                        <div class="motorcycle-series-price">
-                            <h2>Triumph</h2>
-                            <h5>239.90</h5>
-                        </div>
-                        <h4>RDRNR</h4>
+                        <h4>Boy</h4>
                     </div>
                 </div>
             </div>
-            <div class="view-more-div">
-                <button id="view-more">View More</button>
-            </div>
-        </div>
     </main>
     <footer>
         <div class="headfoot-clear">
@@ -163,7 +212,6 @@
                     <div>
                         <ul class="navigation-list-footer">
                             <li><a href="Home.html" class="navigation-item navigation-item-active">Home</a></li>
-                            <li><a href="Motorcycle.html" class="navigation-item">Motorcycles</a></li>
                             <li><a href="Events.html" class="navigation-item">Events</a></li>
                             <li><a href="AboutUs.html" class="navigation-item">About Us</a></li>
                             <li><a href="Register.html" class="navigation-item">Register</a></li>
