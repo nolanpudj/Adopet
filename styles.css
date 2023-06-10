@@ -994,6 +994,10 @@ main {
   transition: width 0.5s, height 0.3s, box-shadow 0.3s;
 }
 
+.heading-forum {
+  width: 100%;
+}
+
 .event-banner:hover {
   width: 80%;
   box-shadow: gray 5px 10px 10px;
