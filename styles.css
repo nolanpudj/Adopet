@@ -378,22 +378,26 @@ main{
 
 .motorcycle-desc h4{
     font-weight: 800;
-    font-size: xx-large;
+    font-size: 32px;
     color: #5e5e5e;
     margin-top: 0px;
     margin-bottom: 24px;
 }
 
+.motorcycle-series-name h4{
+    font-size: 24px;
+}
+
 .motorcycle-desc div h5{
     color: #DFD6FF;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .motorcycle-desc div h2{
     font-weight: 600;
-    color: #9173F3;
-    font-size: 24px;
+    color: #d9d9d9;
+    font-size: 20px;
 }
 
 .motorcycle-card{
@@ -446,6 +450,22 @@ main{
     justify-content: space-between;
     margin: 0%;
     height: 64px;
+}
+
+.motorcycle-series-name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    height: 64px;
+}
+
+.motorcycle-series-name h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .view-more-div{
