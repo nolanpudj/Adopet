@@ -325,11 +325,11 @@ html {
     position: absolute;
   }
   /* dikomen karena menganggu search bar5*/
-  .home-title div {
-   /* width: auto; 
-     right: 45%;  */
+  /* .home-title div {
+   width: auto; 
+     right: 45%; 
   
-  }
+  } */
   
   .hero-section div h1 {
     color: white;
