@@ -225,16 +225,16 @@ function validate_terms(){
 
 
 document.getElementById("input")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        Window.locatio.replace("SheltersDetails.html");
+    .addEventListener("keyup", function(input) {
+    input.preventDefault();
+    if (input.keyCode === 13) {
+        Window.locatio.replace("ShelterDetails.html");
     }
 });
 
 document.addEventListener("keyup", function(inputs) {
     if (inputs.keyCode === 13) {
-        window.location.replace("ShelterDetails.html");
+        window.location.replace("PetSearchResults.html");
     }
 });
 
