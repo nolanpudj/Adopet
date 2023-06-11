@@ -153,7 +153,17 @@ function validate_terms(){
     return true
 }
 
+document.addEventListener("keyup", function(input) {
+    if (input.keyCode === 13) {
+        window.location.replace("PetSearchResults.html");
+    }
+});
 
+document.addEventListener("keyup", function(inputs) {
+    if (input.keyCode === 13) {
+        window.location.replace("Sheltersearch");
+    }
+});
 //Motorcycles page view more button
 let toggleSeeMore = true;
 let motorbike = document.getElementById("bikes").innerHTML;
