@@ -1699,7 +1699,7 @@ footer div div div{
     margin-right: 670px;
     margin-bottom: 100px;
     width: 30px;
-    height: 20px;
+    height: 30px;
 }
 
 .shelter-policy h6 {
@@ -1832,6 +1832,13 @@ footer div div div{
     transition: ease-in-out 0.3s;
 }
 
+.shelter-button:hover{
+    width: 500px;
+    border: solid #D95796 1px;
+    color: white;
+    background: #D95796(255, 255, 255, 0.85);
+}
+
 .profile {
     display: grid;
     font-size: small;
@@ -1933,4 +1940,23 @@ footer div div div{
 .shelter-number-coloumn{
     flex: 25%;
     margin: 18px;
+}
+
+/* Artikel Page */
+
+.green-highlight{
+    display: inline;
+    align-self: flex-start;
+    background-color: #5CC99C;
+    color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 600;
+    font-size: x-large;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.green-highlight:hover{
+    background-color: #1D1238;
+    box-shadow: 8px 8px #9173F3;
 }
