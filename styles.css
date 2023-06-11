@@ -1277,6 +1277,12 @@ html {
   
   /*header footer if screen <750px  (TABLET)*/
   @media only screen and (max-width: 768px) {
+    .input-box{
+      max-width: 100px;
+    }
+    .input-boxs{
+      max-width: 100px;
+    }
     header {
       flex-direction: column;
     }
