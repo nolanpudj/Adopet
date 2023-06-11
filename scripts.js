@@ -176,7 +176,7 @@ document.getElementById("view-more").addEventListener("click", () => {
         </div>
     </div>
     <div class="motorcycle-card">
-        <img src="Assets/motor (1).png"/>
+        <img src="Assets/motor (4).png"/>
         <div class="motorcycle-desc">
             <div class="motorcycle-series-price">
                 <h2>Dogs</h2>
@@ -189,7 +189,7 @@ document.getElementById("view-more").addEventListener("click", () => {
         </div>
     </div>
     <div class="motorcycle-card">
-        <img src="Assets/motor (1).png"/>
+        <img src="Assets/motor (2).png"/>
         <div class="motorcycle-desc">
             <div class="motorcycle-series-price">
                 <h2>Dogs</h2>
