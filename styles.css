@@ -324,7 +324,7 @@ html {
   .hero-section div img {
     position: absolute;
   }
-  
+  /* dikomen karena menganggu search bar
   .home-title div {
    /* width: auto; 
      right: 45%;  */
