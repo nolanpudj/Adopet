@@ -163,7 +163,10 @@ header img{
 main{
     font-family: Poppins, Verdana, Tahoma, sans-serif;
 }
-
+.mainresult{
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    background-color: #DEDEDE;
+}
 .hero-section{
     position: relative;
     align-items: center;
@@ -639,7 +642,14 @@ main{
     font-style: bold;
     font-size: xx-large;
 }
-
+.subtitle1{
+    color: #5E5E5E;
+    font-weight: 800;
+    font-style: bold;
+    font-size: xx-large;
+    
+    
+}
 .the-team{
     align-items: center;
     justify-content: center;
