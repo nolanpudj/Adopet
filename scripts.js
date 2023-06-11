@@ -57,6 +57,61 @@ function validate_login()
    return true;
 }
 
+function validate_login_email()
+{
+    let email = document.forms["regForm"]["email"].value
+    let adSym = email.indexOf("@");
+    if (email == ""){ //is empty
+        document.getElementById("email").style.backgroundColor = "#ffe0ee"
+        alert("Email should not be empty.");
+        return false
+    }else if ( adSym == -1 || adSym == 0 || email.startsWith(".")){ // Begins with "@" or does not exist, Begins with "."
+        document.getElementById("email").style.backgroundColor = "#ffe0ee"
+        alert("Invalid email.");
+        return false
+    }else if (email.substring(adSym+1) == "" || email.substring(adSym+1).indexOf("@") != -1){ // Ends with "@" or exist multiple
+        document.getElementById("email").style.backgroundColor = "#ffe0ee"
+        alert("Invalid email.");
+        return false
+    }
+    document.getElementById("email").style.backgroundColor = "white"
+    return true
+}
+
+function validate_login_password()
+{
+    let password = document.forms["regForm"]["password"].value;
+
+    if (password.length < 8){
+        document.getElementById("password").style.backgroundColor = "#ffe0ee"
+        alert("Password should consist of at least 8 characters or numbers")
+        return false
+    }
+    let upper = false
+    let number = false
+    for(let i=0; i<password.length; i++){
+        let asc = password.charCodeAt(i);
+        if (asc >= 48 && asc <= 57){
+            number = true
+        }
+        else if (asc >= 65 && asc <= 90){
+            upper = true
+        }
+    }
+    if (!upper){
+        document.getElementById("password").style.backgroundColor = "#ffe0ee"
+        alert("Password should have capital letter(s)")
+        return false
+    }
+    if (!number){
+        document.getElementById("password").style.backgroundColor = "#ffe0ee"
+        alert("Password should have number(s)")
+        return false
+    }
+    document.getElementById("password").style.backgroundColor = "white"
+    return true
+}
+
 //Register
 function validate(){
     if(!validate_name()) return false;
