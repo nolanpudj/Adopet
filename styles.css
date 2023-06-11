@@ -172,7 +172,7 @@ html {
     position: relative;
     height: 80px;
     max-width: 300px;
-   width: 100%;
+    width: 100%;
 
     
     padding-left: 65px;
@@ -185,20 +185,19 @@ html {
   }
   
   .input-box i {
-  
     font-size: 25px;
     color: #707070;
   }
   
   .input-box a {
-  position: absolute;
-  left: 0;
-  padding-left: 25px;
-  top: 0;
-  height: 100%;
-  display: flex;
-  align-items:center ;
-  justify-content: center;
+    position: absolute;
+    left: 0;
+    padding-left: 25px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
   }
   
   
@@ -209,7 +208,7 @@ html {
     font-size: 16px;
     font-weight: 400;
     border-radius: 30px;
-  color: #333;
+    color: #333;
     outline: none;
     border: none;
     background-color: transparent;
@@ -220,33 +219,28 @@ html {
     position: relative;
     height: 80px;
     max-width: 300px;
-   width: 100%;
-
+    width: 100%;
     margin-left: 5%;
     padding-left: 65px;
     background-color: #fff;
     border-radius: 30px;
-  
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  
-  
   }
   
   .input-boxs i {
-  
     font-size: 25px;
     color: #707070;
   }
   
   .input-boxs a {
-  position: absolute;
-  left: 0;
-  padding-left: 25px;
-  top: 0;
-  height: 100%;
-  display: flex;
-  align-items:center ;
-  justify-content: center;
+    position: absolute;
+    left: 0;
+    padding-left: 25px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
   }
   
   
@@ -257,16 +251,19 @@ html {
     font-size: 16px;
     font-weight: 400;
     border-radius: 30px;
-  color: #333;
+    color: #333;
     outline: none;
     border: none;
     background-color: transparent;
     font-family: "Poppins", sans-serif;
   } 
-  
+
+  .event-banner-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from parent */
+  }
   
 
-  
   .hero-section {
     position: relative;
     align-items: center;
@@ -286,50 +283,43 @@ html {
   .hero-section video{
       width: 100vw;
   }
-  
-  .hero-section h1{
-    width: 300px;
-
-
-    margin: 0px 0px 0px 250px;
-}
-.hero-section h3{
-    width: 300px;
-  
-    margin: 0px 0px 0px 250px;
-
-}
-
 
 .hero-section .input-box{
   margin-bottom: 50%;
   margin-left: 30%;
-
-
 }
+
 .hero-section .input-boxs{
     margin-bottom: 50%;
     margin-left: 52%;
+}
 
-  }
-  .hero-section div{
-      position: absolute;
-      
-      /* width: 600px;
-        margin: 160px;
-      object-fit: cover; */
-      
-  }
+.hero-section div{
+  position: absolute;  
+  width: 600px;
+  margin-top: 160px;
+  object-fit: cover;
+}
+
+.heading {
+  margin-top: 0px !important;
+  margin-left: 160px;
+  width: 560px !important;
+}
+
+.heading h3{
+  width: 360px !important;
+}
   
   .hero-section div img {
     position: absolute;
   }
-  /* dikomen karena menganggu search bar5*/
-  .home-title div {
+  /* dikomen karena menganggu search bar5
+   .home-title div { */
    /* width: auto; 
-     right: 45%;  */
+     right: 45%;  
   
-  }
+  }*/
   
   .hero-section div h1 {
     color: white;

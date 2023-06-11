@@ -169,11 +169,20 @@ function validate_terms(){
 }
 
 
-document.addEventListener("keyup", function(inputs) {
-    if (input.keyCode === 13) {
-        window.location.replace("Sheltersearch");
+document.getElementById("input")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        Window.locatio.replace("SheltersDetails.html");
     }
 });
+
+document.addEventListener("keyup", function(inputs) {
+    if (inputs.keyCode === 13) {
+        window.location.replace("ShelterDetails.html");
+    }
+});
+
 //Motorcycles page view more button
 let toggleSeeMore = true;
 let motorbike = document.getElementById("bikes").innerHTML;
