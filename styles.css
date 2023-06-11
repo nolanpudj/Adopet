@@ -163,7 +163,10 @@ html {
   main {
     font-family: Poppins, Verdana, Tahoma, sans-serif;
   }
-  
+.mainresult{
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    background-color: #DEDEDE;
+}  
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -668,8 +671,27 @@ html {
   #view-more:hover {
     border: solid #dfd6ff 3px;
   }
-  
-  .history,
+  .view-more1-div{
+    text-align: center;
+}
+
+  #view-more1{
+    text-align: center;
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    color: #9173F3;
+    border: solid rgba(0, 0, 0, 0) 3px;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: border 0.3s;
+    padding: 8px 16px 8px 16px;
+}
+
+#view-more1:hover{
+    border: solid #DFD6FF 3px;
+}
+.history,
   .innovation,
   .the-team,
   .favorites,
@@ -804,7 +826,14 @@ html {
     font-style: bold;
     font-size: xx-large;
   }
-  
+.subtitle1{
+    color: #5E5E5E;
+    font-weight: 800;
+    font-style: bold;
+    font-size: xx-large;
+      
+    
+}
   .the-team {
     align-items: center;
     justify-content: center;
@@ -1752,8 +1781,8 @@ html {
   .home-gallery {
     display: flex;
     width: 100%;
-    margin-bottom: 11.25rem;
-  }
+    margin-bottom: 11.25rem;  }
+
   
   /* tambahan gres */
   .pagination {
