@@ -994,6 +994,11 @@ main {
   transition: width 0.5s, height 0.3s, box-shadow 0.3s;
 }
 
+.event-banner-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from parent */
+}
+
 .heading-forum {
   width: 100%;
 }
