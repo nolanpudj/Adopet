@@ -223,20 +223,55 @@ function validate_terms(){
     return true
 }
 
-
-document.getElementById("input")
-    .addEventListener("keyup", function(input) {
-    input.preventDefault();
-    if (input.keyCode === 13) {
-        Window.locatio.replace("ShelterDetails.html");
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      if (event.target.closest(".input-box") !== null) {
+        if (event.target.closest(".input-box").id === "input") {
+          window.location.href = "PetSearchResults.html";
+        } else if (event.target.closest(".input-box").id === "inputs") {
+          window.location.href = "ShelterDetails.html";
+        }
+      } else if (event.target.closest(".input-boxs") !== null) {
+        if (event.target.closest(".input-boxs").id === "inputs") {
+          window.location.href = "ShelterDetails.html";
+        }
+      }
     }
-});
+});  
 
-document.addEventListener("keyup", function(inputs) {
-    if (inputs.keyCode === 13) {
-        window.location.replace("PetSearchResults.html");
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      if (event.target.closest(".input-box") !== null) {
+        if (event.target.closest(".input-box").id === "inputPets") {
+          window.location.href = "PetSearchResults.html";
+        }
+      } else if (event.target.closest(".input-boxs") !== null) {
+        if (event.target.closest(".input-boxs").id === "inputsPets") {
+          window.location.href = "ShelterDetails.html";
+        }
+      }
     }
-});
+});  
+
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      if (event.target.closest(".input-box") !== null) {
+        if (event.target.closest(".input-box").id === "inputArticle") {
+          window.location.href = "ArticleSearchResults.html";
+        }
+      }
+    }
+});  
+
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      if (event.target.closest(".input-box") !== null) {
+        if (event.target.closest(".input-box").id === "inputForum") {
+          window.location.href = "ForumSearchResults.html";
+        }
+      }
+    }
+});  
 
 //Motorcycles page view more button
 let toggleSeeMore = true;

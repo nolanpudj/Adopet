@@ -176,6 +176,7 @@ html {
     height: 80px;
     max-width: 300px;
     width: 100%;
+    z-index: 1;
 
     
     padding-left: 65px;
@@ -185,6 +186,12 @@ html {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   
   
+  }
+
+  #inputArticle, #inputForum {
+      max-width: 640px;
+      width: 100%;
+      z-index: 1;
   }
   
   .input-box i {
@@ -228,6 +235,7 @@ html {
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
   }
   
   .input-boxs i {
@@ -499,6 +507,7 @@ html {
     margin-bottom: 8%;
     width: 32px; /* Set the desired width */
     height: 32px; /* Set the desired height */
+    z-index: 1;
   }
   
   .motorcycle div h3,
