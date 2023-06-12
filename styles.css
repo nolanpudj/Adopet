@@ -264,6 +264,7 @@ html {
   .event-banner-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the color from parent */
+
   }
   
 
