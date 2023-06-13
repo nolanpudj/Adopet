@@ -335,9 +335,14 @@ html {
   width: 360px !important;
 }
   
-  .hero-section div img {
-    position: absolute;
+  .hero-section img {
+    width: 99.4vw;
   }
+
+  .hero-section video {
+    width: 99.4vw;
+  }
+
   /* dikomen karena menganggu search bar5
    .home-title div { */
    /* width: auto; 
@@ -547,7 +552,7 @@ html {
   .reccomendation-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
   }
   
   .article {
