@@ -2234,406 +2234,446 @@ html {
   .home-gallery {
     display: flex;
     width: 100%;
-    margin-bottom: 11.25rem;  }
+    margin-bottom: 11.25rem;
+}
 
-  
-  /* tambahan gres */
-  .pagination {
+/* tambahan evan eventdetails*/
+
+.event-section{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1D1238;
+}
+
+.event-section img{
+    width: 99.3vw;
+}
+
+.event-section div{
+    position: absolute;
+    width: 700px;
+    padding: 160px;
+    object-fit: cover;
+}
+
+.event-section div img{
+    position: absolute;
+}
+
+.event-section div h1{
+    color: white;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.event-section div h2{
+    color: #DFD6FF;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+.event-section div h3{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+.event-section p {
+    color: white;
+}
+
+.event-detail {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    max-width: 750px;
+}
+
+.event-icon {
+    margin-right: 50px;
+}
+
+.event-description h3{
+    align-items: center;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 40px;
+    padding-left: 190px;
+} 
+
+/* tambahan evan shelterdetails */
+
+.shelter-section{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1D1238;
+}
+
+.shelter-section img{
+    width: 99.3vw;
+}
+
+.shelter-section div{
+    position: absolute;
+    width: 700px;
+    padding: 160px;
+    object-fit: cover;
+}
+
+.shelter-section div img{
+    position: absolute;
+}
+
+.shelter-section div h1{
+    color: white;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.shelter-section div h2{
+    color: #DFD6FF;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+.shelter-section div h3{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+.shelter-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    border-radius: 45px;
+    margin-left: 300px;
+    margin-top: 230px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.shelter-icon img{
+    max-width: 35%;
+    height: auto;
+    margin-right: 400px;
+}
+
+.shelter-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 250px;
+    margin-bottom: 150px;
+    color: black;
+    font-size: 36px;
+}
+
+.shelter-text img {
+    margin-top: 100px;
+    margin-left: 400px;
+    width: 1000px;
+}
+
+.shelter-loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    color: black;
+    font-size: 20px;
+}
+
+.shelter-loc img {
+    margin-right: 670px;
+    margin-bottom: 100px;
+    width: 30px;
+    height: 20px;
+}
+
+.shelter-policy h6 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.shelter-missions h6 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.ShelterPolicy{
+    margin-top: 50px;
+}
+
+.ShelterMissions{
+    margin-top: auto;
+}
+
+/* Tambahan evan buat Pets Details */
+
+.pet-section{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1D1238;
+}
+
+.pet-section img{
+    width: 99.3vw;
+}
+
+.pet-section div{
+    position: absolute;
+    width: 70px;
+    padding: 160px;
+    object-fit: cover;
+}
+
+.pet-section div img{
+    position: absolute;
+}
+
+.pet-section div h1{
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.pet-section div h2{
+    color: #DFD6FF;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+.pet-section div h3{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+.pet-name {
+    margin-top: 650px;
+    margin-right: 400px;
+}
+
+.button {
+    margin-top: 265px;
+    margin-left: 100px;
+}
+
+.pet-collection-button{
+    font-size: medium;  
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+    width: 160px;
+    height: 35px;
+    
+    border: solid #D95796 1px;
+    color: white;
+    background: #D95796;
+    border-radius: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+.pet-collection-button:hover{
+    width: 160px;
+    color: #D95796;
+    border: solid #D95796 1px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.adopt-button {
+    margin-left: 400px;
+}
+
+.call-button {
+    margin-left: 600px;
+}
+
+.shelter-button{
+    font-size: medium;  
+    font-family: Poppins, Verdana, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
-  }
-  
-  .pagination a {
-    color: #1d1238;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .pagination a:hover {
-    color: white;
-    background-color: #1d1238;
-    /* background-color: #ddd; */
-  }
-  
-  .pagination .active {
-    background-color: #4caf50;
-    color: white;
-  }
-  
-  .forum-contents {
-    display: inline-flex;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
-  
-  .event-banner-column-padding {
-    flex: 25%;
-    margin: 8px;
-    display: inline-flex;
-    padding-bottom: 5px;
-  }
-  
-  .event-banner .event-banner-desc-forum {
-    margin-top: 8px;
-    max-width: 700px;
-    transition: max-width 0.1s;
-  }
-  
-  .more-button {
-    width: 100%;
+    
+    width: 500px;
+    height: 48px;
+    
+    border: solid #D95796 1px;
+    color: #D95796;
+    background: white;
+    border-radius: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+.profile {
+    display: grid;
+    font-size: small;
+    margin-top: 50px;
+    margin-left: 160px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin: 0%;
-    height: 64px;
-  }
-  
-  .load-button {
-    background-color: #d95796;
+}
+
+.profile-head {
+    max-width: 400px;
+}
+
+.breed h2 {
+    color: gray;
+    font-size: 20px;
+}
+
+.breed h2{
+    font-size: 20px;
+    color: gray;
+}
+
+.shelter-card{
+    text-align: left;
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: #1d12382c 8px 8px 16px;
+    padding: 5px;
+    margin: 18px;
+    transform: scale(100%);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    margin-left: 150px;
+}
+
+.shelter-card-mobile{
+    display: none;
+    text-align: left;
+    max-width: 280px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: #1d12382c 8px 8px 16px;
+    padding: 0;
+    margin: 0;
+    transform: scale(100%);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+}
+
+.shelter-card img{
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.shelter-desc{
+    padding-top: 0%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.shelter-desc h1 {
+    color: black;
+    font-size: 24px;
+}
+
+.shelter-desc h2{
+    font-weight: 600;
+    color: gray;
+    font-size: 15px;
+}
+
+.shelter-desc h3{
+    color: black;
+}
+
+.shelter-desc h4{
+    font-weight: 800;
+    font-size: xx-large;
+    color: #5e5e5e;
+    margin: 10px;
+    margin-bottom: 24px;
+}
+
+.shelter-desc h5{
+    color: #DFD6FF;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.shelter-number-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shelter-number-coloumn{
+    flex: 25%;
+    margin: 18px;
+}
+
+/* Artikel Page */
+
+.green-highlight{
+    display: inline;
+    align-self: flex-start;
+    background-color: #5CC99C;
     color: white;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: Poppins, Verdana, Tahoma, sans-serif;
-  }
-  
-  .load-button:hover {
-    background-color: #d95796;
-  }
-  
-  
-  /* tambahan evan eventdetails*/
-  
-  .event-section{
-      position: relative;
-      align-items: center;
-      justify-items: center;
-      flex-direction: row;
-      display: flex;
-      height: 100%;
-      object-fit: cover;
-      background-color: #1D1238;
-  }
-  
-  .event-section img{
-      width: 99.3vw;
-  }
-  
-  .event-section div{
-      position: absolute;
-      width: 700px;
-      padding: 160px;
-      object-fit: cover;
-  }
-  
-  .event-section div img{
-      position: absolute;
-  }
-  
-  .event-section div h1{
-      color: white;
-      font-weight: 800;
-      font-size: 60px;
-  }
-  
-  .event-section div h2{
-      color: #DFD6FF;
-      font-size: x-large;
-      font-weight: 600;
-      margin-bottom: 0%;
-  }
-  
-  .event-section div h3{
-      color: white;
-      font-size: large;
-      font-weight: 600;
-  }
-  
-  .event-section p {
-      color: white;
-  }
-  
-  .event-detail {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      padding-left: 100px;
-      max-width: 750px;
-  }
-  
-  .event-icon {
-      margin-right: 50px;
-  }
-  
-  .event-description h3{
-      align-items: center;
-      font-size: 16px;
-      font-weight: lighter;
-      margin-top: 40px;
-      padding-left: 190px;
-  } 
-  
-  /* tambahan evan shelterdetails */
-  
-  .shelter-section{
-      position: relative;
-      align-items: center;
-      justify-items: center;
-      flex-direction: row;
-      display: flex;
-      height: 100%;
-      object-fit: cover;
-      background-color: #1D1238;
-  }
-  
-  .shelter-section img{
-      width: 99.3vw;
-  }
-  
-  .shelter-section div{
-      position: absolute;
-      width: 700px;
-      padding: 160px;
-      object-fit: cover;
-  }
-  
-  .shelter-section div img{
-      position: absolute;
-  }
-  
-  .shelter-section div h1{
-      color: white;
-      font-weight: 800;
-      font-size: 60px;
-  }
-  
-  .shelter-section div h2{
-      color: #DFD6FF;
-      font-size: x-large;
-      font-weight: 600;
-      margin-bottom: 0%;
-  }
-  
-  .shelter-section div h3{
-      color: white;
-      font-size: large;
-      font-weight: 600;
-  }
-  
-  .shelter-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      border-radius: 45px;
-      margin-left: 300px;
-      margin-top: 300px;
-  }
-  
-  .shelter-icon img{
-      max-width: 35%;
-      max-height: 80%;
-      margin-right: 400px;
-  }
-  
-  .shelter-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 40%;
-      margin-top: 5%;
-      color: black;
-      font-size: 36px;
-  }
-  
-  .shelter-text img {
-      margin-top: 100px;
-      width: 400px;
-  }
-  
-  .shelter-loc {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: black;
-      font-size: 20px;
-  }
-  
-  .shelter-loc img {
-      margin-left: 8%;
-      width: 30px;
-      height: 30px;
-  }
-  
-  .shelter-policy h6 {
-      font-weight: lighter;
-      font-size: 20px;
-      margin-top: auto;
-  }
-  
-  .shelter-missions h6 {
-      font-weight: lighter;
-      font-size: 20px;
-      margin-top: auto;
-  }
-  
-  .ShelterPolicy{
-      margin-top: 50px;
-  }
-  
-  .ShelterMissions{
-      margin-top: auto;
-  }
-  
-  /* Tambahan evan buat Pets Details */
-  
-  .pet-name {
-      margin-top: 650px;
-  }
-  
-  .adopt-button {
-      margin-top: 8%;
-  }
-  
-  .call-button {
-      margin-top: 8%;
-  }
-  
-  .shelter-button{
-      font-size: medium;  
-      font-family: Poppins, Verdana, Tahoma, sans-serif;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      
-      width: 500px;
-      height: 48px;
-      
-      border: solid #D95796 1px;
-      color: #D95796;
-      background: white;
-      border-radius: 16px;
-      transition: ease-in-out 0.3s;
-  }
-  
-  .profile {
-      display: grid;
-      font-size: small;
-      margin-top: 50px;
-      margin-left: 160px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
-  
-  .profile-head {
-      max-width: 400px;
-  }
-  
-  .breed h2 {
-      color: gray;
-      font-size: 20px;
-  }
-  
-  .breed h2{
-      font-size: 20px;
-      color: gray;
-  }
-  
-  .shelter-card{
-      text-align: left;
-      width: 550px;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: #1d12382c 8px 8px 16px;
-      padding: 5px;
-      margin: 18px;
-      transform: scale(100%);
-      transition: box-shadow 0.3s, transform 0.3s;
-      background-color: white;
-      margin-left: 150px;
-  }
-  
-  .shelter-card-mobile{
-      display: none;
-      text-align: left;
-      max-width: 280px;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: #1d12382c 8px 8px 16px;
-      padding: 0;
-      margin: 0;
-      transform: scale(100%);
-      transition: box-shadow 0.3s, transform 0.3s;
-      background-color: white;
-  }
-  
-  .shelter-card-mobile:hover{
-      transform: scale(110%);
-      box-shadow: #1d1238bb 8px 8px 16px;
-  }
-  
-  .shelter-card:hover{
-      transform: scale(110%);
-      box-shadow: #1d1238bb 8px 8px 16px;
-  }
-  
-  .shelter-card img{
-      width: 100%;
-      border-radius: 18px 18px 0px 0px;
-  }
-  
-  .shelter-desc{
-      padding-top: 0%;
-      margin-left: 20px;
-      margin-right: 20px;
-  }
-  
-  .shelter-desc h1 {
-      color: black;
-      font-size: 24px;
-  }
-  
-  .shelter-desc h2{
-      font-weight: 600;
-      color: gray;
-      font-size: 15px;
-  }
-  
-  .shelter-desc h3{
-      color: black;
-  }
-  
-  .shelter-desc h4{
-      font-weight: 800;
-      font-size: xx-large;
-      color: #5e5e5e;
-      margin: 10px;
-      margin-bottom: 24px;
-  }
-  
-  .shelter-desc h5{
-      color: #DFD6FF;
-      font-weight: 200;
-      font-size: 24px;
-  }
-  
-  .shelter-number-row{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
-  
-  .shelter-number-coloumn{
-      flex: 25%;
-      margin: 18px;
-  }
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 600;
+    font-size: x-large;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.green-highlight:hover{
+    background-color: #1D1238;
+    box-shadow: 8px 8px #9173F3;
+}
+
+/* Artikel & Forum Details */
+
+.forum-title div {
+    margin-top: 40%;
+}
+
+.forum-title div h1{
+    font-size: 40px;
+}
+
+.forum-desc {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
