@@ -57,6 +57,24 @@ function validate_login()
    return true;
 }
 
+let eyeicon = document.getElementById("eye-close");
+let password = document.getElementById("password");
+
+eyeicon.onclick = function()
+{
+    if(password.type == "password")
+    {
+        password.type = "text";
+        eyeicon.src = "./Assets/eye-open.png";
+    }
+    else
+    {
+        password.type = "password";
+        eyeicon.src = "./Assets/eye-close.png";
+    }
+}
+
+
 function validate_login_email()
 {
     let email = document.forms["regForm"]["email"].value
