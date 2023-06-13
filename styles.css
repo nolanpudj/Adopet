@@ -1960,3 +1960,20 @@ footer div div div{
     background-color: #1D1238;
     box-shadow: 8px 8px #9173F3;
 }
+
+/* Artikel & Forum Details */
+
+.forum-title div {
+    margin-top: 40%;
+}
+
+.forum-title div h1{
+    font-size: 40px;
+}
+
+.forum-desc {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
