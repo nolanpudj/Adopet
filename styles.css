@@ -671,6 +671,15 @@ html {
       margin: 0%;
       height: 64px;
   }
+
+  .motorcycle-series-name2{
+    line-height: 2em;
+    
+  }
+
+  .motorcycle-series-name2 h4{
+    font-size: 24px;
+  }
   
   .motorcycle-series-name h4 {
       white-space: nowrap;
@@ -962,13 +971,13 @@ html {
 }
 
 .shelter-policy h6 {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 20px;
   margin-top: auto;
 }
 
 .shelter-missions h6 {
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 20px;
   margin-top: auto;
 }
@@ -1833,18 +1842,7 @@ html {
       width: 30px;
       height: 30px;
   }
-  
-  .shelter-policy h6 {
-      font-weight: lighter;
-      font-size: 20px;
-      margin-top: auto;
-  }
-  
-  .shelter-missions h6 {
-      font-weight: lighter;
-      font-size: 20px;
-      margin-top: auto;
-  }
+
   
   .ShelterPolicy{
       margin-top: 50px;
@@ -2841,18 +2839,6 @@ html {
     margin-bottom: 100px;
     width: 30px;
     height: 20px;
-}
-
-.shelter-policy h6 {
-    font-weight: lighter;
-    font-size: 20px;
-    margin-top: auto;
-}
-
-.shelter-missions h6 {
-    font-weight: lighter;
-    font-size: 20px;
-    margin-top: auto;
 }
 
 .ShelterPolicy{
