@@ -759,6 +759,22 @@ main{
     color: #9173F3;
 }
 
+
+.input-field-password{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.eye{
+    width: auto;
+    height: 25px;
+    position: absolute;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
 .register-button{
     width: 100%;
     height: 48px;
@@ -1190,11 +1206,19 @@ footer div div div{
         font-size: x-large;
     }
 
+
     .input-field{
         width: 100%;
         height: 48px;
     }
     
+    span{
+        position: absolute;
+        right: 15px;
+        transform: translate(0,-50%);
+    }
+
+
     footer div{
         flex-direction: column;
         align-items: center;
